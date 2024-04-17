@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login:EduXplora</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+
+</head>
+<body class="container__login">
+    
+        <header class="header__concepto">
+            <nav>
+                <h1 class="logo__contenedor">
+                    <a class="logo__texto">EDUXPLORA</a>
+                    <img src="../img/LOGO.png" width="15%" alt="EduXplora">
+                </h1>
+            </nav>
+        </header>
+    
+        <div class="recuadro__login">
+            <div class="contenedor__formulario">
+                <form class="formulario_login" id="miFormulario" onsubmit="enviarFormulario(event)">
+                    <main class="main__login">
+                        <h1 class="contacto__contenido">Login</h1>
+                        <div class="contacto__contenido">
+                            <p>Ingresa Usuario y Contraseña</p>
+                        </div> <!-- nosotros contenido -->
+                    </main>
+                    <div class="campo__login">
+                        <h4 class="campo__label__login" for="usuario">Usuario</h4>
+                        <input 
+                            class="campo__field__login"
+                            type="text" 
+                            placeholder="Ingresa" 
+                            id="usuario"
+                            required
+                        >
+                    </div>
+                    <div class="campo__login">
+                        <h4 class="campo__label__login" for="password">Contraseña</h4>
+                        <input 
+                            class="campo__field__login"
+                            type="password" 
+                            placeholder="Ingresa" 
+                            id="password"
+                            required
+                        >
+                    </div>
+                    <div class="contenedor izquierda margen">
+                        <input type="submit" value="Enviar" class="btn btn-cta__cuarto">
+                    </div>
+                </form>
+            </div>
+           
+            <div>
+                <img src="../img/assets/reunion.png" width="110%">
+            </div>
+        
+        </div>
+    
+
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/cambiartema.js"></script>
+</body>
+</html>

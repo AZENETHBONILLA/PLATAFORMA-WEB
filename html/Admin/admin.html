@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../../public/css/main.css">
+</head>
+<body class="body__usuarios">
+    <div class="container__dos">
+        <header>
+            <nav>
+                <h1 class="logo__contenedor">
+                    <img src="../../img/LOGO.png" width="10%" alt="EduXplora">
+                    <a class="logo__texto">EDUXPLORA</a>
+                </h1>
+                <ul>
+                    <li><img class="campanados" src="../../img/new/campana.png" width="40%"></a></li>
+                    <li><img class="campana" src="../../img/new/perfil.png" width="60%"></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="contenedor__inicio">
+            <nav class="menu__iconos">
+                <h1>
+                    <ul>
+                        <li><a href="admin.html" class=" btndos btn-cta__quinto btn-cta__quinto--activo"><img  src="../../img/new/inicio.png" width="120%"></a></li>
+                        <li><a href="usuario.html" class="btndos btn-cta__quinto"><img src="../../img/new/usuarios.png" width="120%"></a></li>
+                        <li><a href="materias.html" class="btndos btn-cta__quinto"><img src="../../img/new/materias.png" width="120%"></a></li>
+                        <li><a href="reportes.html" class="btndos btn-cta__quinto"><img src="../../img/new/pdf.png" width="120%"></a></li>
+                    </ul>
+                </h1>
+                <ul>
+                    <li><a href="comentarios.html" class="btndos btn-cta__quinto"><img src="../../img/new/comentarios.png" width="120%"></a></li>
+                    <li><a href="config.html" class="btndos btn-cta__quinto"><img src="../../img/new/config.png" width="120%"></a></li>
+                    <li><img src="../../img/new/perfil.png" class="perfil" width="50%"></li>
+                </ul>
+            </nav>
+        <div class="contenedor__backup">
+            <div class="contenedor__derecho">
+                <div>
+                    <h1 class="titulo">¡Hola Administrador!</h1>
+                    <p>Añade nuevas visitas guiadas.</p>
+                
+                    <form action="#" id="formulario" class="formulario_usuario">
+                        <div class="campo">
+                            <h4 class="campo__labelusuario" for="carrera">CARRERA</h4>
+                            <select class="campo__field opcion" id="carrera" name="carrera">
+                                <option class="opcion" value="selecciona">Selecciona</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <h4 class="campo__labelusuario" for="materia">MATERIA</h4>
+                            <select class="campo__field opcion" id="materia" name="materia">
+                                <option class="opcion" value="selecciona">Selecciona</option>
+                            </select>
+                        </div>
+                        
+                        <div class="contenedor izquierda margen">
+                            <a type="button" class="btn btn-cta" id="botonBuscar">Generar</a>
+                        </div>
+                    </form>
+                </div>
+
+            <div>
+                <img src="../../img/new/travel.png" class="backup" width="70%">
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../../scripts/traermateria.js"></script>
+    <script src="../../scripts/cambiartema.js"></script>
+</body>
+</html>

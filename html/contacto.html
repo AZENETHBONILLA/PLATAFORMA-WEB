@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+
+</head>
+<body class="container__cuarto">
+    
+        <header class="header__concepto">
+            <nav>
+                <ul>
+                    <li><a href="ayuda.html" class="btn">Manual de Apoyo</a></li>
+                </ul>
+                <h1 class="logo__contenedor">
+                    <a class="logo__texto">EDUXPLORA</a>
+                    <img src="../img/LOGO.png" width="15%" alt="EduXplora">
+                </h1>
+
+            </nav>
+        </header>
+
+        <div class="recuadro">
+            <div class="contenedor__formulario">
+                <form class="formulario">
+                    <h1 class="contacto__contenido">CONTÁCTANOS</h1>
+                    <div class="contacto__contenido">
+                        <p>Envíanos un comentario o visita el Manual</p>
+                    </div> <!-- nosotros contenido -->
+                    
+                    <div class="campo">
+                        <h4 class="campo__label" for="email">E-mail</h4>
+                        <input 
+                            class="campo__field"
+                            type="email" 
+                            placeholder="Tu E-mail" 
+                            id="email"
+                        >
+                    </div>
+                    <div class="campo">
+                        <h4 class="campo__label" for="mensaje">Mensaje</h4>
+                        <textarea 
+                            class="campo__field campo__field--textarea"
+                            id="mensaje"
+                        ></textarea>
+                    </div>
+        
+                    <div class="contenedor izquierda">
+                        <input type="button" value="Enviar" class="btn btn-cta" onclick="registrarProducto()">
+                    </div>
+                </form>
+
+                <div>
+                    <img src="../img/new/image.png" width="80%">
+                </div>
+
+            </div>
+        </div>
+
+    <script src="../scripts/contacto.js"></script>
+    <script src="../scripts/cambiartema.js"></script>
+    
+</body>
+</html>

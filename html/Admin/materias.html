@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Materias</title>
+    <link rel="stylesheet" href="../../public/css/main.css">
+</head>
+<body class="body__usuarios">
+    <div class="container__dos">
+        <header>
+            <nav>
+                <h1 class="logo__contenedor">
+                    <img src="../../img/LOGO.png" width="10%" alt="EduXplora">
+                    <a class="logo__texto">EDUXPLORA</a>
+                </h1>
+                <ul>
+                    <li><img class="campanados" src="../../img/new/campana.png" width="40%"></a></li>
+                    <li><img class="campana" src="../../img/new/perfil.png" width="60%"></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="contenedor__inicio">
+        <nav class="menu__iconos">
+            <h1>
+                <ul>
+                    <li><a href="admin.html" class=" btndos btn-cta__quinto"><img  src="../../img/new/inicio.png" width="120%"></a></li>
+                    <li><a href="usuario.html" class="btndos btn-cta__quinto"><img src="../../img/new/usuarios.png" width="120%"></a></li>
+                    <li><a href="materias.html" class="btndos btn-cta__quinto btn-cta__quinto--activo"><img src="../../img/new/materias.png" width="120%"></a></li>
+                    <li><a href="reportes.html" class="btndos btn-cta__quinto"><img src="../../img/new/pdf.png" width="120%"></a></li>
+                </ul>
+            </h1>
+            <ul>
+                <li><a href="comentarios.html" class="btndos btn-cta__quinto"><img src="../../img/new/comentarios.png" width="120%"></a></li>
+                <li><a href="config.html" class="btndos btn-cta__quinto"><img src="../../img/new/config.png" width="120%"></a></li>
+                <li><img src="../../img/new/perfil.png" class="perfil" width="50%"></li>
+            </ul>
+        </nav>
+
+        <div class="contenedor_general">
+            <div class="contenedor__derecho">
+                    <div>
+                        <div class="titulo__busqueda">
+                            <h1 class="Bus_titulo">Materias y sus Objetivos</h1>
+                            <p>Consultar Información ¡Mantén tus datos académicos al día! </p>
+                        </div>
+
+                        <form action="#" id="formulario" class="formulario__materias">
+                            <h4 class="campo__labelmaterias" for="carrera">CARRERA</h4>
+                            <select class="campo__field opciondos" id="Carrera" name="rol">
+                                <option class="opcion" value="0">Selecciona</option>
+                            </select>
+                            
+                            <h4 class="campo__labelmaterias" for="materia">MATERIA</h4>
+                            <select class="campo__field opciondos" id="Materia" name="rol">
+                                <option class="opcion" value="0">Selecciona</option>
+                            </select>
+                            
+            
+                            <div class="contenedor izquierda margen">
+                                <a class="btn btn-cta">Mostrar</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <img src="../../img/new/backup.png" width="80%" alt="EduXplora" class="perfil">
+                    </div>
+            </div>
+
+            <div class="contenedor__objetivo" id="infoObjetivo">
+                <div class="texto__objetivo">
+                </div>     
+            </div>
+
+
+            <div class="contenedor__perfiles">
+                <div class="comentarios__perfiles">
+                    <form action="#" id="formulario__agregar" class="formulario__materiasdos">
+                        <h1>Agregar Materia</h1>
+                        <div >
+                            <h4 class="campo__labelusuariodos" for="carrera">CARRERA</h4>
+                                <select class="campo__field opciondos" id="Carrerados" name="rol">
+                                    <option class="opcion" value="0">Selecciona</option>
+                                    <option class="opcion" value="1">Sistemas Computacionales</option>
+                                    <option class="opcion" value="2">Civil</option>
+                                    <option class="opcion" value="3">Industrial</option>
+                                    <option class="opcion" value="4">Telecomunicaciones</option>
+                                    <option class="opcion" value="5">Robotica</option>
+                                </select>
+                        </div>
+                        <div>
+                            <h4 class="campo__labelusuariodos" for="usuario">MATERIA</h4>
+                            <input 
+                                class="campo__field"
+                                type="materia" 
+                                placeholder="Materia" 
+                                id="materiainput"
+                            >
+                        </div>
+                        
+                        <div>
+                            <h4 class="campo__labelusuariodos" for="usuario">OBJETIVO</h4>
+                            <input 
+                                class="campo__field"
+                                type="objetivo" 
+                                placeholder="Objetivo" 
+                                id="objetivoinput"
+                            >
+                        </div>
+                        
+                        <div class="contenedor izquierda margen">
+                            <a type="button" class="btn btn-cta" id="guardarBtn">Guardar</a>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="comentarios__perfiles">
+                    <form action="#" id="formulario__modificar" class="formulario__materiasdos">
+                        <h1>Modificar Materia</h1>
+
+                        <div>
+                            <h4 class="campo__labelusuariodos" for="carrerados">CARRERA</h4>
+                                <select class="campo__field opciondos" id="carreratres">
+                                    <option class="opcion" value="0">Selecciona</option>
+                                    <option class="opcion" value="1">Sistemas Computacionales</option>
+                                    <option class="opcion" value="2">Civil</option>
+                                    <option class="opcion" value="3">Industrial</option>
+                                    <option class="opcion" value="4">Telecomunicaciones</option>
+                                    <option class="opcion" value="5">Robotica</option>
+                                </select>
+                        </div>
+
+                        <div>
+                            <h4 class="campo__labelusuariodos" for="usuario">MATERIA</h4>
+                            <input 
+                                class="campo__field"
+                                type="materia" 
+                                placeholder="Materia" 
+                                id="inputmateria"
+                            >
+                        </div>
+
+                        <div>
+                            <h4 class="campo__labelusuariodos" for="usuario">IDMATERIA</h4>
+                            <input 
+                                class="campo__field"
+                                type="materia" 
+                                placeholder="Materia" 
+                                id="idMateria"
+                            >
+                        </div>
+                        
+                        <div>
+                            <h4 class="campo__labelusuariodos" for="usuario">OBJETIVO</h4>
+                            <input 
+                                class="campo__field"
+                                type="objetivo" 
+                                placeholder="Objetivo" 
+                                id="inputobjetivo"
+                            >
+                        </div>
+                        
+                        <div class="contenedor izquierda margen">
+                            <a type="button" class="btn btn-cta" id="guardarBtndos">Guardar</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/editarmaterias.js"></script>
+    <script src="../../scripts/cambiartema.js"></script>
+</body>
+</html>
